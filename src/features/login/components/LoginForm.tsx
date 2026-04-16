@@ -147,13 +147,11 @@ export const LoginForm = () => {
       <div className="text-center mb-8">
         <h1 className="text-2xl font-bold text-gray-900">Welcome Back</h1>
         <p className="text-gray-600 mt-2">Sign in to your account</p>
-        {isMock && (
-          <div className="mt-4 p-3 bg-blue-50 rounded-md text-sm text-blue-700">
-            <p className="font-semibold">Mock Mode Active</p>
-            <p className="text-xs mt-1">Use any email and password to login</p>
-            <p className="text-xs">Demo: admin@example.com / any password</p>
-          </div>
-        )}
+        <div className="mt-4 p-3 bg-blue-50 rounded-md text-sm text-blue-700">
+          <p className="font-semibold">Mock Mode Active</p>
+          <p className="text-xs mt-1">Use any email and password to login</p>
+          <p className="text-xs">Demo: admin@example.com / any password</p>
+        </div>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-4">
